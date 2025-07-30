@@ -1,22 +1,34 @@
 import PropTypes from "prop-types";
-import React from "react";
+import { useSyncExternalStore } from "react";
 import RelatedMaps from "terriajs/lib/ReactViews/RelatedMaps/RelatedMaps";
-import {
-  ExperimentalMenu,
-  MenuLeft
-} from "terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups";
+import { MenuLeft } from "terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups";
 import MenuItem from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface";
 import version from "../../version";
 import "./global.scss";
+import { Loader } from "./Loader";
+import { terriaStore } from "./terriaStore";
 
-export default function UserInterface(props) {
-  const relatedMaps = props.viewState.terria.configParameters.relatedMaps;
+export const UserInterface = ({ themeOverrides }) => {
+  const { terria, viewState, status } = useSyncExternalStore(
+    terriaStore.subscribe,
+    terriaStore.getSnapshot
+  );
+
+  if (status === "loading") {
+    return <Loader />;
+  }
+  const relatedMaps = viewState.terria.configParameters.relatedMaps;
   const aboutButtonHrefUrl =
-    props.viewState.terria.configParameters.aboutButtonHrefUrl;
+    viewState.terria.configParameters.aboutButtonHrefUrl;
 
   return (
-    <StandardUserInterface {...props} version={version}>
+    <StandardUserInterface
+      terria={terria}
+      viewState={viewState}
+      themeOverrides={themeOverrides}
+      version={version}
+    >
       <MenuLeft>
         {aboutButtonHrefUrl ? (
           <MenuItem
@@ -29,12 +41,11 @@ export default function UserInterface(props) {
           <RelatedMaps relatedMaps={relatedMaps} />
         ) : null}
       </MenuLeft>
-      <ExperimentalMenu />
+      {/* <ExperimentalMenu /> */}
     </StandardUserInterface>
   );
-}
+};
 
 UserInterface.propTypes = {
-  terria: PropTypes.object,
-  viewState: PropTypes.object
+  themeOverrides: PropTypes.object
 };

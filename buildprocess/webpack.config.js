@@ -10,7 +10,7 @@ module.exports = function (devMode) {
   // Base configuration
   const config = {
     mode: devMode ? "development" : "production",
-    entry: "./entry.js",
+    entry: "./entry.jsx",
     output: {
       path: path.resolve(__dirname, "..", "wwwroot", "build"),
       filename: "TerriaMap.js",
@@ -28,8 +28,7 @@ module.exports = function (devMode) {
         {
           test: /\.(ts|js)x?$/,
           include: [
-            path.resolve(__dirname, "..", "index.js"),
-            path.resolve(__dirname, "..", "entry.js"),
+            path.resolve(__dirname, "..", "entry.jsx"),
             path.resolve(__dirname, "..", "plugins.ts"),
             path.resolve(__dirname, "..", "lib")
           ],
@@ -80,12 +79,6 @@ module.exports = function (devMode) {
             }
           }
         },
-        // handle css files - inject in html tag
-        {
-          test: /loader\.css$/,
-          include: [path.resolve(__dirname, "..", "lib", "Styles")],
-          use: ["style-loader", "css-loader"]
-        },
         // handle scss files
         {
           test: /\.scss$/,
@@ -100,6 +93,7 @@ module.exports = function (devMode) {
                 defaultExport: true
               }
             },
+            { loader: "terriajs-typings-for-css-modules-loader" },
             {
               loader: "css-loader",
               options: {
