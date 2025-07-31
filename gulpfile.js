@@ -188,7 +188,12 @@ gulp.task("lint", function (done) {
   var runExternalModule = require("terriajs/buildprocess/runExternalModule");
   const eslintDir = path.dirname(require.resolve("eslint/package.json"));
   const eslintExecutable = path.join(eslintDir, "bin", "eslint.js");
-  runExternalModule(eslintExecutable, ["--max-warnings", "0", "lib"]);
+  runExternalModule(eslintExecutable, [
+    "--max-warnings",
+    "0",
+    "index.js",
+    "lib"
+  ]);
   done();
 });
 

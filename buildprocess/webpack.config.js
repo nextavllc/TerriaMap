@@ -10,7 +10,7 @@ module.exports = function (devMode) {
   // Base configuration
   const config = {
     mode: devMode ? "development" : "production",
-    entry: "./entry.jsx",
+    entry: "./entry.js",
     output: {
       path: path.resolve(__dirname, "..", "wwwroot", "build"),
       filename: "TerriaMap.js",
@@ -28,7 +28,8 @@ module.exports = function (devMode) {
         {
           test: /\.(ts|js)x?$/,
           include: [
-            path.resolve(__dirname, "..", "entry.jsx"),
+            path.resolve(__dirname, "..", "index.js"),
+            path.resolve(__dirname, "..", "entry.js"),
             path.resolve(__dirname, "..", "plugins.ts"),
             path.resolve(__dirname, "..", "lib")
           ],
