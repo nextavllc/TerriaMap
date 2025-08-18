@@ -6,8 +6,7 @@
       "packages/terriajs-cesium/packages/engine",
       "packages/terriajs-cesium/packages/widgets",
       "packages/terriajs-server",
-      "packages/plugin-sample",
-      "packages/plugin-proj4leaflet"
+      "packages/plugin-sample"
     ],
     "nohoist": [
       "**/husky"
@@ -25,7 +24,7 @@
     "url": "http://github.com/TerriaJS/TerriaMap"
   },
   "dependencies": {
-    "terriajs-plugin-proj4leaflet": "^0.0.1-alpha.2",
+    "terriajs-plugin-proj4leaflet": "^0.0.1-alpha.3",
     "terriajs-server": "^4.0.2"
   },
   "config": {
