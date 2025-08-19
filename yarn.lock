@@ -10746,10 +10746,10 @@ terriajs-plugin-api@0.0.1-alpha.6:
   resolved "https://registry.yarnpkg.com/terriajs-plugin-api/-/terriajs-plugin-api-0.0.1-alpha.6.tgz#d1aca8cbc64c6e78650c70706799ec7286062eed"
   integrity sha512-qH9fOH4ZgO+gtW3ZLa52QQWCbZhS+PtF8YL0Z8+bKuwvM9yiFCnCLgFrOZnIcHZ8xj59j16Kvxnc068iDjNQfQ==
 
-terriajs-plugin-proj4leaflet@^0.0.1-alpha.3:
-  version "0.0.1-alpha.3"
-  resolved "https://registry.yarnpkg.com/terriajs-plugin-proj4leaflet/-/terriajs-plugin-proj4leaflet-0.0.1-alpha.3.tgz#70a7737303f03190b53660996f4f553a98e35971"
-  integrity sha512-76ckuivzAX+t9vc/e13W9YgDa3BKwxMSQyYIwkn/L5il0XPkC+Z2pA0jZbYBBg9AG3rkZZIKYQRtByJDo+C/qg==
+terriajs-plugin-proj4leaflet@^0.0.1-alpha.4:
+  version "0.0.1-alpha.4"
+  resolved "https://registry.yarnpkg.com/terriajs-plugin-proj4leaflet/-/terriajs-plugin-proj4leaflet-0.0.1-alpha.4.tgz#879c46d6470ea3595b51be95204c85d2dcb7d732"
+  integrity sha512-GByd/XRtu7NcHIy+smiI2k42a9eBoPgbOUQolUrIrijXMboE06lAfB3ZClqRqIB67rImS2Jk1NlNUg+9wTYVZg==
   dependencies:
     proj4leaflet "^1.0.2"
 
