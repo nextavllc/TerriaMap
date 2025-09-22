@@ -72,7 +72,7 @@
     "sass-loader": "^16.0.3",
     "style-loader": "^4.0.0",
     "svg-sprite-loader": "^6.0.11",
-    "terriajs": "terriajs/terriajs#upgrade-ts-592",
+    "terriajs": "8.10.0",
     "terriajs-cesium": "20.0.1",
     "terriajs-plugin-api": "0.0.1-alpha.17",
     "terriajs-plugin-sample": "0.0.1-alpha.7",
