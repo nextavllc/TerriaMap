@@ -3,6 +3,7 @@
 
 const configureWebpackForTerriaJS = require("terriajs/buildprocess/configureWebpack");
 const configureWebpackForPlugins = require("./configureWebpackForPlugins");
+const defaultBabelLoader = require("terriajs/buildprocess/defaultBabelLoader");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 const HtmlPlugin = require("html-webpack-plugin");
@@ -37,29 +38,7 @@ module.exports = function ({ devMode, baseHref = "/" }) {
             path.resolve(__dirname, "..", "plugins.ts"),
             path.resolve(__dirname, "..", "lib")
           ],
-          use: [
-            {
-              loader: "babel-loader",
-              options: {
-                cacheDirectory: true,
-                presets: [
-                  [
-                    "@babel/preset-env",
-                    {
-                      corejs: 3,
-                      useBuiltIns: "usage"
-                    }
-                  ],
-                  ["@babel/preset-react", { runtime: "automatic" }],
-                  ["@babel/preset-typescript", { allowNamespaces: true }]
-                ],
-                plugins: [
-                  ["@babel/plugin-proposal-decorators", { legacy: true }],
-                  "babel-plugin-styled-components"
-                ]
-              }
-            }
-          ]
+          use: [defaultBabelLoader({ devMode })]
         },
         // import html file as string
         {
