@@ -37,7 +37,7 @@
     json5 "^2.2.3"
     semver "^6.3.1"
 
-"@babel/generator@^7.28.3":
+"@babel/generator@^7.28.0", "@babel/generator@^7.28.3":
   version "7.28.3"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.28.3.tgz#9626c1741c650cbac39121694a0f2d7451b8ef3e"
   integrity sha512-3lSpxGgvnmZznmBkCRnVREPUFJv2wrv9iAoFDvADJc0ypmdOxdUtcLeBgBJ6zE0PMeTKnxeQzyk0xTBq4Ep7zw==
@@ -9294,33 +9294,6 @@ terriajs-cesium-widgets@13.2.0:
   dependencies:
     nosleep.js "^0.12.0"
     terriajs-cesium "^21.0.0"
-
-terriajs-cesium@20.0.1:
-  version "20.0.1"
-  resolved "https://registry.yarnpkg.com/terriajs-cesium/-/terriajs-cesium-20.0.1.tgz#8f4c599d76224f0bf9f165d7ae6c813579865b2a"
-  integrity sha512-jzOLcxtQ92XcZskAEa5PmkXUNeZ/RZWqsPXwCs5un4icRkAo5I2RTTo7MYJ37nMyCQEbH+3BEHxdcMs1qx0kfg==
-  dependencies:
-    "@cesium/wasm-splats" "^0.1.0-alpha.2"
-    "@spz-loader/core" "0.3.0"
-    "@tweenjs/tween.js" "^25.0.0"
-    "@zip.js/zip.js" "^2.8.1"
-    autolinker "^4.0.0"
-    bitmap-sdf "^1.0.3"
-    dompurify "^3.0.2"
-    draco3d "^1.5.1"
-    earcut "^3.0.0"
-    grapheme-splitter "^1.0.4"
-    jsep "^1.3.8"
-    kdbush "^4.0.1"
-    ktx-parse "^1.0.0"
-    lerc "^2.0.0"
-    mersenne-twister "^1.1.0"
-    meshoptimizer "^0.25.0"
-    pako "^2.0.4"
-    protobufjs "^7.1.0"
-    rbush "^4.0.1"
-    topojson-client "^3.1.0"
-    urijs "^1.19.7"
 
 terriajs-cesium@21.0.0, terriajs-cesium@^21.0.0:
   version "21.0.0"
