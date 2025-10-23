@@ -13,7 +13,7 @@
     ]
   },
   "name": "terriajs-map",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Geospatial catalog explorer based on TerriaJS.",
   "license": "Apache-2.0",
   "engines": {
@@ -24,7 +24,7 @@
     "url": "http://github.com/TerriaJS/TerriaMap"
   },
   "dependencies": {
-    "terriajs-plugin-proj4leaflet": "^0.0.1-alpha.5",
+    "terriajs-plugin-proj4leaflet": "^0.0.1-alpha.6",
     "terriajs-server": "^4.0.2"
   },
   "config": {
@@ -35,12 +35,8 @@
     }
   },
   "resolutions": {
-    "underscore": "^1.12.1",
     "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.1",
-    "@types/lodash": "4.14.182",
-    "@types/css-font-loading-module": "^0.0.13",
-    "@types/node": "^22.13.1"
+    "@types/react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
@@ -50,7 +46,6 @@
     "@typescript-eslint/parser": "^8.24.0",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
-    "ejs": "^3.1.10",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.37.4",
@@ -60,6 +55,7 @@
     "fork-ts-checker-webpack-plugin": "^9.0.2",
     "fs-extra": "^7.0.1",
     "gulp": "^5.0.0",
+    "html-webpack-plugin": "^5.6.3",
     "husky": "^8.0.3",
     "is-subdir": "^1.2.0",
     "json5": "^2.1.0",
@@ -76,16 +72,15 @@
     "sass": "^1.81.0",
     "sass-loader": "^16.0.3",
     "style-loader": "^4.0.0",
-    "svg-sprite-loader": "^6.0.11",
-    "terriajs": "8.10.0",
-    "terriajs-cesium": "8.0.2",
+    "terriajs": "8.11.0",
+    "terriajs-cesium": "21.0.0",
+    "svg-sprite": "^2.0.4",
     "terriajs-plugin-api": "0.0.1-alpha.17",
     "terriajs-plugin-sample": "0.0.1-alpha.7",
-    "typescript": "5.7.3",
+    "typescript": "^5.9.2",
     "urijs": "^1.18.12",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.1.0",
     "yargs": "^17.7.2"
   },
   "scripts": {
@@ -96,7 +91,6 @@
     "start": "terriajs-server --config-file serverconfig.json",
     "gulp": "gulp",
     "postinstall": "echo 'Installation successful. What to do next:\\n  yarn gulp dev   # Starts the server on port 3001, builds TerriaMap and dependencies, and rebuilds if files change.'",
-    "hot": "webpack-dev-server --inline --config buildprocess/webpack.config.hot.js --hot --host 0.0.0.0",
     "prettier": "prettier --write .",
     "prettier-check": "prettier --check ."
   }
