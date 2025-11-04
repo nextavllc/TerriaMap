@@ -1,6 +1,7 @@
 const configureWebpackForTerriaJS = require("terriajs/buildprocess/configureWebpack");
 const configureWebpackForPlugins = require("./configureWebpackForPlugins");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
 /**
@@ -135,6 +136,16 @@ module.exports = function (devMode) {
       new MiniCssExtractPlugin({
         filename: "TerriaMap.css",
         ignoreOrder: true
+      }),
+      // Copy sql-wasm.wasm to the root wwwroot directory for @ngageoint/geopackage
+      // Note: geopackage uses rtree-sql.js (a fork of sql.js), so we must use its WASM file
+      new CopyPlugin({
+        patterns: [
+          {
+            from: require.resolve("rtree-sql.js/dist/sql-wasm.wasm"),
+            to: path.resolve(__dirname, "..", "wwwroot", "sql-wasm.wasm")
+          }
+        ]
       })
     ],
     resolve: {
