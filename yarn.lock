@@ -8480,10 +8480,9 @@ terriajs-typings-for-css-modules-loader@^2.5.2:
   optionalDependencies:
     prettier "*"
 
-terriajs@8.12.2:
+"terriajs@github:nextavllc/terriajs#wmts-time-bridge-8.12.2":
   version "8.12.2"
-  resolved "https://registry.yarnpkg.com/terriajs/-/terriajs-8.12.2.tgz#f5c4a8446d497c6759dbc59e9544b05a7e79720b"
-  integrity sha512-Yj3Ve6+Q1WstjO1yvyoILC8EAwOzF/3C0Nv8VCG60A6mZ/UIN46R82waEtP84BaBUrtrnGEGkWa5MyuZMI/X3Q==
+  resolved "https://codeload.github.com/nextavllc/terriajs/tar.gz/1d3d79de33a29429e4fb94b32138aa34bddeb8fa"
   dependencies:
     "@babel/core" "^7.28.0"
     "@babel/plugin-proposal-decorators" "^7.28.0"
