@@ -886,6 +886,33 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.27.1"
 
+"@cesium/engine@npm:terriajs-cesium@23.0.2":
+  version "23.0.2"
+  resolved "https://registry.yarnpkg.com/terriajs-cesium/-/terriajs-cesium-23.0.2.tgz#c27d7de825965f9e184ab330d54b5a5de39b3bc0"
+  integrity sha512-siIZQotpM1dKu/ESV6OPx1zHu2z68y5obX7yhRXdlCuJdIIea9NWywL6rz7u2JDpe1xaPTUN76D+coqSLijvAw==
+  dependencies:
+    "@cesium/wasm-splats" "^0.1.0-alpha.2"
+    "@spz-loader/core" "0.3.0"
+    "@tweenjs/tween.js" "^25.0.0"
+    "@zip.js/zip.js" "^2.8.1"
+    autolinker "^4.0.0"
+    bitmap-sdf "^1.0.3"
+    dompurify "^3.3.0"
+    draco3d "^1.5.1"
+    earcut "^3.0.0"
+    grapheme-splitter "^1.0.4"
+    jsep "^1.3.8"
+    kdbush "^4.0.1"
+    ktx-parse "^1.0.0"
+    lerc "^2.0.0"
+    mersenne-twister "^1.1.0"
+    meshoptimizer "^1.0.1"
+    pako "^2.0.4"
+    protobufjs "^8.0.0"
+    rbush "^4.0.1"
+    topojson-client "^3.1.0"
+    urijs "^1.19.7"
+
 "@cesium/wasm-splats@^0.1.0-alpha.2":
   version "0.1.0-alpha.2"
   resolved "https://registry.yarnpkg.com/@cesium/wasm-splats/-/wasm-splats-0.1.0-alpha.2.tgz#f2d0d717d46f5f3d6d923549e90fb5ab4d429cab"
@@ -1976,13 +2003,6 @@
   resolved "https://registry.yarnpkg.com/@types/flexsearch/-/flexsearch-0.7.6.tgz#240c11d16825c56833ec0c66eb1de3ea0e162a49"
   integrity sha512-H5IXcRn96/gaDmo+rDl2aJuIJsob8dgOXDqf8K0t8rWZd1AFNaaspmRsElESiU+EWE33qfbFPgI0OC/B1g9FCA==
 
-"@types/fs-extra@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-7.0.0.tgz#9c4ad9e1339e7448a76698829def1f159c1b636c"
-  integrity sha512-ndoMMbGyuToTy4qB6Lex/inR98nPiNHacsgMPvy+zqMLgSxbt8VtWpDArpGp69h1fEDQHn1KB+9DWD++wgbwYA==
-  dependencies:
-    "@types/node" "*"
-
 "@types/geojson-vt@^3.2.1":
   version "3.2.5"
   resolved "https://registry.yarnpkg.com/@types/geojson-vt/-/geojson-vt-3.2.5.tgz#b6c356874991d9ab4207533476dfbcdb21e38408"
@@ -2012,20 +2032,15 @@
   resolved "https://registry.yarnpkg.com/@types/html-minifier-terser/-/html-minifier-terser-6.1.0.tgz#4fc33a00c1d0c16987b1a20cf92d20614c55ac35"
   integrity sha512-oh/6byDPnL1zeNXFrDXFLyZjkr1MsBG667IM792caf1L2UPOOMf65NFzjUH/ltyfwjAGfs1rsX1eftK0jC/KIg==
 
-"@types/jasmine-ajax@^3.3.0":
-  version "3.3.5"
-  resolved "https://registry.yarnpkg.com/@types/jasmine-ajax/-/jasmine-ajax-3.3.5.tgz#a4a2a996ce572481ed1a852c1b44df57f1853571"
-  integrity sha512-kq6u6TuwcyxAMN8f9GHKmMFhDC3D7aLIMR6Va1KgTji9g64KUsAE6Xw+/flPtuU/o2EQpYpdlQjg6chdBOdVzQ==
-
 "@types/jasmine@*":
   version "5.1.9"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-5.1.9.tgz#9f00abff2a17687e675ce6669e7b53c9e7d145f0"
   integrity sha512-8t4HtkW4wxiPVedMpeZ63n3vlWxEIquo/zc1Tm8ElU+SqVV7+D3Na2PWaJUp179AzTragMWVwkMv7mvty0NfyQ==
 
-"@types/jasmine@^2.8.8":
-  version "2.8.23"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.23.tgz#fdd8b684ab2e31c5a01e1c763ea4c443afe23df9"
-  integrity sha512-x2taYv8LtplAGTEPxEnc1nWh3dqV4VhgAzXLXQkRolB/+cAOfCAqXt+8cKjX/a8v1JmNXQ9yGCJT8+8pEuU1Mg==
+"@types/jasmine@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-6.0.0.tgz#85dc83ea9bcb1d047486da447a6a0ebe241f589c"
+  integrity sha512-18lgGsLmEh3VJk9eZ5wAjTISxdqzl6YOwu8UdMpolajN57QOCNbl+AbHUd+Yu9ItrsFdB+c8LSZSGNg8nHaguw==
 
 "@types/json-schema@*", "@types/json-schema@^7.0.15", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.15"
@@ -2089,14 +2104,6 @@
   resolved "https://registry.yarnpkg.com/@types/mustache/-/mustache-0.8.32.tgz#7db3b81f2bf450bd38805f596d20eca97c4ed595"
   integrity sha512-RTVWV485OOf4+nO2+feurk0chzHkSjkjALiejpHltyuMf/13fGymbbNNFrSKdSSUg1TIwzszXdWsVirxgqYiFA==
 
-"@types/node-fetch@^2.6.2":
-  version "2.6.13"
-  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.6.13.tgz#e0c9b7b5edbdb1b50ce32c127e85e880872d56ee"
-  integrity sha512-QGpRVpzSaUs30JBSGPjOg4Uveu384erbHBoT1zeONvyCfwQxIkUshLAOqN/k9EjGviPRmWTTe6aH2qySWKTVSw==
-  dependencies:
-    "@types/node" "*"
-    form-data "^4.0.4"
-
 "@types/node@*", "@types/node@>=13.7.0":
   version "24.7.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-24.7.0.tgz#a34c9f0d3401db396782e440317dd5d8373c286f"
@@ -2143,19 +2150,12 @@
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.3.7.tgz#b89ddf2cd83b4feafcc4e2ea41afdfb95a0d194f"
   integrity sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==
 
-"@types/react-test-renderer@^18.3.0":
-  version "18.3.1"
-  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-18.3.1.tgz#225bfe8d4ad7ee3b04c2fa27642bb74274a5961d"
-  integrity sha512-vAhnk0tG2eGa37lkU9+s5SoroCsRI08xnsWFiAXOuPH2jqzMbcXvKExXViPi1P5fIklDeCvXqyrdmipFaSkZrA==
-  dependencies:
-    "@types/react" "^18"
-
 "@types/react-transition-group@^4.4.0":
   version "4.4.12"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.12.tgz#b5d76568485b02a307238270bfe96cb51ee2a044"
   integrity sha512-8TV6R3h2j7a91c+1DXdJi3Syo69zzIZbz7Lg5tORM5LEJG7X/E6a1V3drRyBRZq7/utz7A+c4OgYLiLcYGHG6w==
 
-"@types/react@*", "@types/react@^18", "@types/react@^18.3.3":
+"@types/react@*", "@types/react@^18.3.3":
   version "18.3.26"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.26.tgz#4c5970878d30db3d2a0bca1e4eb5f258e391bbeb"
   integrity sha512-RFA/bURkcKzx/X9oumPG9Vp3D3JUgus/d0b67KB0t5S/raciymilkOa66olh78MUI92QLbEJevO7rvqU/kjwKA==
@@ -3465,7 +3465,7 @@ colorette@^2.0.14:
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.20.tgz#9eb793e6833067f7235902fcd3b09917a000a95a"
   integrity sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==
 
-combined-stream@^1.0.6, combined-stream@^1.0.8, combined-stream@~1.0.6:
+combined-stream@^1.0.6, combined-stream@~1.0.6:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
   integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
@@ -4125,10 +4125,17 @@ domhandler@^5.0, domhandler@^5.0.2, domhandler@^5.0.3:
   dependencies:
     domelementtype "^2.3.0"
 
-dompurify@^3.0.2, dompurify@^3.2.5:
+dompurify@^3.2.5:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.2.7.tgz#721d63913db5111dd6dfda8d3a748cfd7982d44a"
   integrity sha512-WhL/YuveyGXJaerVlMYGWhvQswa7myDG17P7Vu65EWC05o8vfeNbvNf4d/BOvH99+ZW+LlQsc1GDKMa1vNK6dw==
+  optionalDependencies:
+    "@types/trusted-types" "^2.0.7"
+
+dompurify@^3.3.0:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.4.1.tgz#521d04483ac12631b2aedf434a5f5390933b8789"
+  integrity sha512-JahakDAIg1gyOm7dlgWSDjV4n7Ip2PKR55NIT6jrMfIgLFgWo81vdr1/QGqWtFNRqXP9UV71oVePtjqS2ebnPw==
   optionalDependencies:
     "@types/trusted-types" "^2.0.7"
 
@@ -4910,17 +4917,6 @@ fork-ts-checker-webpack-plugin@^9.0.2:
     semver "^7.3.5"
     tapable "^2.2.1"
 
-form-data@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.4.tgz#784cdcce0669a9d68e94d11ac4eea98088edd2c4"
-  integrity sha512-KrGhL9Q4zjj0kiUt5OO4Mr/A/jlI2jDYs5eHBpYHPcBEVSiipAvn2Ko2HnPe20rmcuuvMHNdZFp+4IlGTMF0Ow==
-  dependencies:
-    asynckit "^0.4.0"
-    combined-stream "^1.0.8"
-    es-set-tostringtag "^2.1.0"
-    hasown "^2.0.2"
-    mime-types "^2.1.12"
-
 form-data@~2.3.2:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-2.3.3.tgz#dcce52c05f644f298c6a7ab936bd724ceffbf3a6"
@@ -5244,7 +5240,7 @@ gulp-cli@^3.1.0:
     v8flags "^4.0.0"
     yargs "^16.2.0"
 
-gulp@^5.0.0:
+gulp@^5.0.0, gulp@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/gulp/-/gulp-5.0.1.tgz#c43f37aa34569e101fb6da4e0b464677305acd36"
   integrity sha512-PErok3DZSA5WGMd6XXV3IRNO0mlB+wW3OzhFJLEec1jSERg2j1bxJ6e5Fh6N6fn3FH2T9AP4UYNb/pYlADB9sA==
@@ -6327,10 +6323,10 @@ mersenne-twister@^1.1.0:
   resolved "https://registry.yarnpkg.com/mersenne-twister/-/mersenne-twister-1.1.0.tgz#f916618ee43d7179efcf641bec4531eb9670978a"
   integrity sha512-mUYWsMKNrm4lfygPkL3OfGzOPTR2DBlTkBNHM//F6hGp8cLThY897crAlk3/Jo17LEOOjQUrNAx6DvgO77QJkA==
 
-meshoptimizer@^0.25.0:
-  version "0.25.0"
-  resolved "https://registry.yarnpkg.com/meshoptimizer/-/meshoptimizer-0.25.0.tgz#1234446e55e50beed2b613424330ac5102130ae4"
-  integrity sha512-ewwuAo3ujPZ7T3Y2oTkEoLlXvNOqnr0cjyAxfv5djXJqwD9QlxDDO0qGtsqB4Z9QUVvhruKXg9q/xfK9I5S1xQ==
+meshoptimizer@^1.0.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/meshoptimizer/-/meshoptimizer-1.1.1.tgz#20c7d050d59bdc573154814f6a37d47d89908cca"
+  integrity sha512-oRFNWJRDA/WTrVj7NWvqa5HqE1t9MYDj2VaWirQCzCCrAd2GHrqR/sQezCxiWATPNlKTcRaPRHPJwIRoPBAp5g==
 
 methods@~1.1.2:
   version "1.1.2"
@@ -6521,13 +6517,6 @@ node-fetch@2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
   integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
-  dependencies:
-    whatwg-url "^5.0.0"
-
-node-fetch@^2.6.1:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
-  integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
   dependencies:
     whatwg-url "^5.0.0"
 
@@ -7083,10 +7072,10 @@ prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1,
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
-protobufjs@^7.1.0:
-  version "7.5.4"
-  resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-7.5.4.tgz#885d31fe9c4b37f25d1bb600da30b1c5b37d286a"
-  integrity sha512-CvexbZtbov6jW2eXAvLukXjXUW1TzFaivC46BpWc/3BpcCysb5Vffu+B3XHMm8lVEuy2Mm4XGex8hBSg1yapPg==
+protobufjs@^8.0.0:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-8.0.1.tgz#c1781abf9a73812cbd483b32138ac59948223806"
+  integrity sha512-NWWCCscLjs+cOKF/s/XVNFRW7Yih0fdH+9brffR5NZCy8k42yRdl5KlWKMVXuI1vfCoy4o1z80XR/W/QUb3V3w==
   dependencies:
     "@protobufjs/aspromise" "^1.1.2"
     "@protobufjs/base64" "^1.1.2"
@@ -7402,13 +7391,6 @@ react-transition-group@^4.3.0:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
-
-react-uid@^2.3.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/react-uid/-/react-uid-2.4.0.tgz#ce48a3e2a044964900f3ad5181a0d377702c56c5"
-  integrity sha512-+MVs/25NrcZuGrmlVRWPOSsbS8y72GJOBsR7d68j3/wqOrRBF52U29XAw4+XSelw0Vm6s5VmGH5mCbTCPGVCVg==
-  dependencies:
-    tslib "^2.0.0"
 
 react-use-measure@^2.0.4:
   version "2.1.7"
@@ -8398,18 +8380,18 @@ teex@^1.0.1:
   dependencies:
     streamx "^2.12.5"
 
-terriajs-cesium-widgets@13.2.0:
-  version "13.2.0"
-  resolved "https://registry.yarnpkg.com/terriajs-cesium-widgets/-/terriajs-cesium-widgets-13.2.0.tgz#2b2b6dc23604feb3b1c2b4a546df6fcb287e0820"
-  integrity sha512-bxPsPcN7RrPSgdqu8Gaf5Q6sFNzppGO777mhydH41y3oCixSvCjX8bk5UEd7cyM1mcLMaUnPC/maRIys/zSFiQ==
+terriajs-cesium-widgets@14.4.2:
+  version "14.4.2"
+  resolved "https://registry.yarnpkg.com/terriajs-cesium-widgets/-/terriajs-cesium-widgets-14.4.2.tgz#71d00a85baecb5da6ba092862ce811e307e68133"
+  integrity sha512-PlyTGOi/iI7ei+rtbCeOmRcn0pipnxOtorIgu9356PTETqeLP4vvfnFBPK5GYhc0tHZUSsbTSZD78dJADF2e2Q==
   dependencies:
+    "@cesium/engine" "npm:terriajs-cesium@23.0.2"
     nosleep.js "^0.12.0"
-    terriajs-cesium "^21.0.0"
 
-terriajs-cesium@21.0.1:
-  version "21.0.1"
-  resolved "https://registry.yarnpkg.com/terriajs-cesium/-/terriajs-cesium-21.0.1.tgz#8529991ba962b95c0c55d96d52ff80374272294d"
-  integrity sha512-0F12Fodn/1VIm0x/gNgDj9bYZmkT8sIjTFNSMYCOtpan7aLrI7OWJjqXlcnkSxRf+bsQqqgvONLXlpSlZp/T5g==
+terriajs-cesium@23.0.2:
+  version "23.0.2"
+  resolved "https://registry.yarnpkg.com/terriajs-cesium/-/terriajs-cesium-23.0.2.tgz#c27d7de825965f9e184ab330d54b5a5de39b3bc0"
+  integrity sha512-siIZQotpM1dKu/ESV6OPx1zHu2z68y5obX7yhRXdlCuJdIIea9NWywL6rz7u2JDpe1xaPTUN76D+coqSLijvAw==
   dependencies:
     "@cesium/wasm-splats" "^0.1.0-alpha.2"
     "@spz-loader/core" "0.3.0"
@@ -8417,7 +8399,7 @@ terriajs-cesium@21.0.1:
     "@zip.js/zip.js" "^2.8.1"
     autolinker "^4.0.0"
     bitmap-sdf "^1.0.3"
-    dompurify "^3.0.2"
+    dompurify "^3.3.0"
     draco3d "^1.5.1"
     earcut "^3.0.0"
     grapheme-splitter "^1.0.4"
@@ -8426,36 +8408,9 @@ terriajs-cesium@21.0.1:
     ktx-parse "^1.0.0"
     lerc "^2.0.0"
     mersenne-twister "^1.1.0"
-    meshoptimizer "^0.25.0"
+    meshoptimizer "^1.0.1"
     pako "^2.0.4"
-    protobufjs "^7.1.0"
-    rbush "^4.0.1"
-    topojson-client "^3.1.0"
-    urijs "^1.19.7"
-
-terriajs-cesium@^21.0.0:
-  version "21.0.0"
-  resolved "https://registry.yarnpkg.com/terriajs-cesium/-/terriajs-cesium-21.0.0.tgz#6fafe11e0b5a6463e595a840f373a064ee3d43d1"
-  integrity sha512-IUh8DIjM0fk3upKaeQIiwcyupsUMjOYgfaMw/Jw5/WtNNXewoM6uSq3ZlLDrCP+A7Bz1IG0rgQs9tcouxtf3+w==
-  dependencies:
-    "@cesium/wasm-splats" "^0.1.0-alpha.2"
-    "@spz-loader/core" "0.3.0"
-    "@tweenjs/tween.js" "^25.0.0"
-    "@zip.js/zip.js" "^2.8.1"
-    autolinker "^4.0.0"
-    bitmap-sdf "^1.0.3"
-    dompurify "^3.0.2"
-    draco3d "^1.5.1"
-    earcut "^3.0.0"
-    grapheme-splitter "^1.0.4"
-    jsep "^1.3.8"
-    kdbush "^4.0.1"
-    ktx-parse "^1.0.0"
-    lerc "^2.0.0"
-    mersenne-twister "^1.1.0"
-    meshoptimizer "^0.25.0"
-    pako "^2.0.4"
-    protobufjs "^7.1.0"
+    protobufjs "^8.0.0"
     rbush "^4.0.1"
     topojson-client "^3.1.0"
     urijs "^1.19.7"
@@ -8525,10 +8480,10 @@ terriajs-typings-for-css-modules-loader@^2.5.2:
   optionalDependencies:
     prettier "*"
 
-terriajs@8.11.1:
-  version "8.11.1"
-  resolved "https://registry.yarnpkg.com/terriajs/-/terriajs-8.11.1.tgz#d8347c725afbfd5c3257b5a3bdac010a1ece94b4"
-  integrity sha512-he7X9Z4XlgoM9UJbUMiPegamjwABKpOWJ3mzrh4t+bhl9QTih3yydE6eBlXIO5cILo53NIY6qcC+FTYhhoisCA==
+terriajs@8.12.2:
+  version "8.12.2"
+  resolved "https://registry.yarnpkg.com/terriajs/-/terriajs-8.12.2.tgz#f5c4a8446d497c6759dbc59e9544b05a7e79720b"
+  integrity sha512-Yj3Ve6+Q1WstjO1yvyoILC8EAwOzF/3C0Nv8VCG60A6mZ/UIN46R82waEtP84BaBUrtrnGEGkWa5MyuZMI/X3Q==
   dependencies:
     "@babel/core" "^7.28.0"
     "@babel/plugin-proposal-decorators" "^7.28.0"
@@ -8558,11 +8513,9 @@ terriajs@8.11.1:
     "@types/dateformat" "^5.0.1"
     "@types/file-saver" "^2.0.7"
     "@types/flexsearch" "0.7.6"
-    "@types/fs-extra" "^7.0.0"
     "@types/geojson" "^7946.0.16"
     "@types/geojson-vt" "^3.2.1"
-    "@types/jasmine" "^2.8.8"
-    "@types/jasmine-ajax" "^3.3.0"
+    "@types/jasmine" "^6.0.0"
     "@types/leaflet" "^1.9.12"
     "@types/linkify-it" "^3.0.5"
     "@types/lodash-es" "^4.17.3"
@@ -8570,13 +8523,11 @@ terriajs@8.11.1:
     "@types/math-expression-evaluator" "^1.2.0"
     "@types/ms" "^0.7.31"
     "@types/mustache" "^0.8.32"
-    "@types/node-fetch" "^2.6.2"
     "@types/papaparse" "^4.5.9"
     "@types/pbf" "^3.0.1"
     "@types/react" "^18.3.3"
     "@types/react-color" "^3.0.6"
     "@types/react-dom" "^18.3.1"
-    "@types/react-test-renderer" "^18.3.0"
     "@types/retry" "^0.12.0"
     "@types/shpjs" "^3.4.7"
     "@types/styled-components" "^5.1.34"
@@ -8617,9 +8568,8 @@ terriajs@8.11.1:
     dompurify "^3.2.5"
     file-saver "^2.0.5"
     flexsearch "0.7.21"
-    fs-extra "^7.0.1"
     geojson-vt "^3.2.1"
-    gulp "^5.0.0"
+    gulp "^5.0.1"
     hoist-non-react-statics "^3.3.2"
     html-to-react "^1.7.0"
     i18next "^21.8.13"
@@ -8641,7 +8591,6 @@ terriajs@8.11.1:
     moment "^2.30.1"
     ms "^2.1.3"
     mustache "^2.2.1"
-    node-fetch "^2.6.1"
     papaparse "^5.2.0"
     pbf "^3.0.1"
     point-in-polygon "^1.0.1"
@@ -8661,7 +8610,6 @@ terriajs@8.11.1:
     react-select "^5.10.0"
     react-swipeable "^7.0.2"
     react-transition-group "^4.3.0"
-    react-uid "^2.3.0"
     react-virtual "^2.10.4"
     resolve-url-loader "^5.0.0"
     retry "^0.12.0"
@@ -8669,13 +8617,12 @@ terriajs@8.11.1:
     shpjs "^6.1.0"
     style-loader "^4.0.0"
     styled-components "^5.3.11"
-    terriajs-cesium "21.0.1"
-    terriajs-cesium-widgets "13.2.0"
+    terriajs-cesium "23.0.2"
+    terriajs-cesium-widgets "14.4.2"
     terriajs-html2canvas "1.0.0-alpha.12-terriajs-1"
     terriajs-tiff-imagery-provider "2.13.3-webpack5-3"
     terriajs-typings-for-css-modules-loader "^2.5.2"
     thredds-catalog-crawler "0.0.7"
-    ts-essentials "^5.0.0"
     typescript "^5.9.2"
     urijs "^1.18.12"
     webpack "^5.96.1"
@@ -8802,12 +8749,7 @@ ts-api-utils@^2.1.0:
   resolved "https://registry.yarnpkg.com/ts-api-utils/-/ts-api-utils-2.1.0.tgz#595f7094e46eed364c13fd23e75f9513d29baf91"
   integrity sha512-CUgTZL1irw8u29bzrOD/nH85jqyc74D6SshFgujOIA7osm2Rz7dYH77agkx7H4FBNxDq7Cjf+IjaX/8zwFW+ZQ==
 
-ts-essentials@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/ts-essentials/-/ts-essentials-5.0.0.tgz#531d590c9cd62652c9d96284904cbdb2a1dd5ca8"
-  integrity sha512-ftKWOm6Jq+/UCBekDfxUjLODEd5XGN2EM/+TIQV9LJ5xSV12je4GqdRyv7pXXGGYmEt/nQa6F00xTWYJ5PMjIQ==
-
-tslib@^2.0.0, tslib@^2.0.3, tslib@^2.3.1, tslib@^2.8.1:
+tslib@^2.0.3, tslib@^2.3.1, tslib@^2.8.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.8.1.tgz#612efe4ed235d567e8aba5f2a5fab70280ade83f"
   integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==

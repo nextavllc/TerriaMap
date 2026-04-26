@@ -7,6 +7,7 @@ const defaultBabelLoader = require("terriajs/buildprocess/defaultBabelLoader");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 const HtmlPlugin = require("html-webpack-plugin");
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
 /**
  * Webpack config for building terriamap
@@ -131,7 +132,7 @@ module.exports = function ({ devMode, baseHref = "/" }) {
     "../lib/Styles/variables-overrides.scss"
   );
 
-  return configureWebpackForPlugins(
+  const finalConfig = configureWebpackForPlugins(
     configureWebpackForTerriaJS({
       terriaJSBasePath: path.dirname(require.resolve("terriajs/package.json")),
       config,
@@ -139,4 +140,28 @@ module.exports = function ({ devMode, baseHref = "/" }) {
       MiniCssExtractPlugin
     })
   );
+
+  // Exclude upstream's bundled test files from ForkTsChecker.
+  // terriajs 8.12.x ships test sources under node_modules/terriajs/test/**;
+  // those tests import devDeps (msw, etc.) that are not in our runtime tree
+  // and produce ~126 false-positive type errors during build.
+  // See methaneview-platform#76 (I12 scout comment) for verification.
+  finalConfig.plugins = finalConfig.plugins.map((plugin) => {
+    if (plugin instanceof ForkTsCheckerWebpackPlugin) {
+      const existingTs = plugin.options && plugin.options.typescript;
+      return new ForkTsCheckerWebpackPlugin({
+        ...(plugin.options || {}),
+        typescript: {
+          ...(existingTs || {}),
+          configOverwrite: {
+            ...((existingTs && existingTs.configOverwrite) || {}),
+            exclude: ["**/test/**", "**/node_modules/**"]
+          }
+        }
+      });
+    }
+    return plugin;
+  });
+
+  return finalConfig;
 };
